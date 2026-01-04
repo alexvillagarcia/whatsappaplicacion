@@ -33,8 +33,6 @@ services:
       - DB_POSTGRESDB_PASSWORD=postgresql
     ports:
       - 5678:5678
-    links:
-      - postgres_n8n
     volumes:
       - n8n_storage:/home/node/.n8n
     depends_on:
